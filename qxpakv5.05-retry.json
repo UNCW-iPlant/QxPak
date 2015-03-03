@@ -1,0 +1,96 @@
+{
+  "name": "MAM2737-QXPAK",
+  "version": "5.05",
+  "helpURI": "http://www.icrea.cat/Web/OtherSectionViewer.aspx?key=485&titol=Software:%20Qxpak&researcher=255",
+  "defaultQueue": "normal",
+  "defaultNodeCount": 1,
+  "defaultMemoryPerNode": 4,
+  "defaultProcessorsPerNode": 1,
+  "defaultRequestedTime": "24:00:00",
+  "shortDescription": "Simplifies statistical genetic analysis",
+  "longDescription": "This software aims at simplifying statistical genetic analyses implementing a coherent and unified mixed model approach. The goal is to provide software that can be used in a wide variety of situations with ample genetic and statistical modeling flexibility.",
+  "executionSystem": "lonestar4-12302014-1136-mam2737",
+  "executionType": "HPC",
+  "parallelism": "SERIAL",
+  "deploymentPath": "/mam2737/applications/qxpak-v5.05",
+  "deploymentSystem": "data.iplantcollaborative.org",
+  "templatePath": "qxpak_wrapper.sh",
+  "testPath": "qxpak_wrapper_test.sh",
+  "tags": [
+    "qxpak",
+    "mixed model",
+    "qtl",
+    "GWAS"
+  ],
+  "inputs": [
+    {
+      "id": "inputPed",
+      "details": {
+        "label": "Pedigree File",
+        "description": "File containing individual, mother, father, ((sex), breed)",
+        "showAttribute": false
+      },
+      "semantics": {
+        "minCardinality": 1
+      },
+      "value": {
+        "default": "/iplant/home/mam2737/applications/qxpak-v5.05/qxpak_1.ped",
+        "required": true,
+        "visible": true,
+        "order": 0
+      }
+    },
+    {
+      "id": "inputMkr",
+      "details": {
+        "label": "Marker file",
+        "description": "File containing chromosomes, allele, and SNP. There are two file formats, read manual for more information.",
+        "showAttribute": false
+      },
+      "semantics": {
+        "minCardinality": 1
+      },
+      "value": {
+        "default": "/iplant/home/mam2737/applications/qxpak-v5.05/qxpak_1.mkr",
+        "required": true,
+        "visible": true,
+        "order": 0
+      }
+    },
+    {
+      "id": "inputDat",
+      "details": {
+        "label": "Data file",
+        "description": "File containing records and effects.",
+        "showAttribute": false
+      },
+      "semantics": {
+        "minCardinality": 1
+      },
+      "value": {
+        "default": "/iplant/home/mam2737/applications/qxpak-v5.05/qxpak_1.dat",
+        "required": true,
+        "visible": true,
+        "order": 0
+      }
+    },
+      {
+      "id": "inputPar",
+      "details": {
+        "label": "Parameter file",
+        "description": "File containing pedigree, data, and marker input details",
+        "showAttribute": false
+      },
+      "semantics": {
+        "minCardinality": 1
+      },
+      "value": {
+        "default": "/iplant/home/mam2737/applications/qxpak-v5.05/qxpak_1.par",
+        "required": true,
+        "visible": true,
+        "order": 0
+      }
+    }
+  ],
+  "checkpointable": false
+}
