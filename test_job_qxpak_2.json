@@ -1,0 +1,17 @@
+{
+    "jobName": "Qxpak_Test_Job2",
+    "softwareName": "MAM2737-QXPAK-5.05",
+    "processorsPerNode": 12,
+    "requestedTime": "00:10:00",
+    "memoryPerNode": 24,
+    "nodeCount": 1,
+    "batchQueue": "serial",
+    "archive": false,
+    "archivePath": "",
+	"inputs": {
+		"inputPed": "agave://data.iplantcollaborative.org/mam2737/applications/qxpak-v5.05/qxpak_4.ped",
+		"inputMkr": "agave://data.iplantcollaborative.org/mam2737/applications/qxpak-v5.05/qxpak_2.mkr",
+		"inputDat": "agave://data.iplantcollaborative.org/mam2737/applications/qxpak-v5.05/qxpak_4.dat",
+		"inputPar": "agave://data.iplantcollaborative.org/mam2737/applications/qxpak-v5.05/qxpak_4.par"
+    }    
+}
